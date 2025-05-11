@@ -27,6 +27,9 @@ const PORT = process.env.PORT || 5001;
 
  
 //api's
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
 
 app.use("/api/user", userRoute);
 app.use("/api/company", companyRoute);
